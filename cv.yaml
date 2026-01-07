@@ -1,0 +1,166 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+cv:
+  name: Marvyn-Stephano Zalewski
+  headline: Engineering Manager - Cloud Platform
+  location: Barcelona, Spain
+  email: mzalewski@ownpixel.com
+  phone:
+  website: https://hexpy.fyi
+  photo: 
+  social_networks:
+    - network: LinkedIn
+      username: marvyn-zalewski
+    - network: GitHub
+      username: hExPY
+
+  sections:
+    summary:
+      - "**People-centric Engineering Manager** with over **10 years** of experience building and scaling various **Cloud Platforms**. Proven outcome in driving FinOps excellence, achieving **$1M+** in annual savings, and modernizing DevOps cultures through Team Topologies. **I bridge** the gap between **complex infrastructure** and **business outcomes**, focusing on **simplification**, **observability**, and measurable **Developer Experience (DX)** improvements."
+
+    skills:
+      - label: Technologies
+        details: AWS, Terraform, Docker, GitLab CI/CD, Github Actions, Observability (logs/metrics/traces), FinOps, Datadog, Cloudformation, Ansible
+      - label: Security
+        details: SPLC, AWS Security Hub, Guardrails (SCPs), IAM Identity Center, Guardduty, RBAC, Risk Management, NIST, Incident Response, Application Security Assessments
+      - label: Programming
+        details: Python, Java, TypeScript, Javascript, Bash
+      - label: Frameworks
+        details: Angular, React, NestJS, Next.js
+      - label: Leadership
+        details: Team Topologies, OKRs, Scrumban, Coaching/Mentoring, Change Management, Cross-cultural and remote Teams, Stakeholder Management, Communication, System Thinking, Storytelling, agility
+
+    experience:
+      - company: Awin Global
+        position: Engineering Manager - Cloud Platform
+        start_date: 2024-08
+        end_date: present
+        location: Barcelona, Spain
+        summary: "Leading a high-performing, cross-cultural cloud platform and DevOps team managing the cloud platform strategy, drive DevOps transformation, and own FinOps."
+        highlights:
+          - "Defined and executed an outcome-driven roadmap focused on developer experience, infrastructure simplification, and security that led to improved developer experience."
+          - "Established and led the FinOps function, achieving $84,835+ monthly savings within 6 months across AWS and Datadog."
+          - "Standardized the observability platform (logs/metrics/traces), consolidating fragmented approaches into a streamlined system that increased usability and system understanding across 15+ engineering teams."
+          - "Following the team restructure, improved flow efficiency by reducing context switching, systemizing workstreams, and removing guesswork for load management leading to an improved Peakon engagement score from 7.2 to 8.3 and Developer Experience (DX) score from 62 to 73 within one year."
+
+      - company: Awin Global
+        position: Cloud DevOps Manager
+        start_date: 2024-01
+        end_date: 2024-07
+        location: Barcelona, Spain
+        summary: Restructured team and operating model to remove bottlenecks and clarify ownership using Team Topologies.
+        highlights:
+          - Analyzed bottlenecks, defined a new department charter, and executed a re-organization into DevOps, Cloud Platform, and IT Ops in collaboration with the engineering department.
+          - Managed 3 senior DevOps engineers across Germany and Italy to conclude the AWS landingzone and related infrastructure for further organizational adoption.
+          - Replaced Docker Desktop with open source tools and achieved an annual cost savings of $18,000.
+
+      - company: AVIV Group
+        position: Security Architect
+        start_date: 2022-07
+        end_date: 2024-01
+        location: Hamburg, Germany
+        summary: Built and scaled a self-service Secure Product Lifecycle (SPLC) for AVIV's cloud-native SDLC.
+        highlights:
+          - Launched the SPLC and matured it into a self-service program (dynamic questionnaire and standardized risk reports) that improved application delivery times without additional headcount.
+          - Concluded over 50 application security assessments in 9 months and uncovered 80+ unique risks.
+          - Reduced recurring findings by prioritizing platform-level fixes with implemented controls from preventative SCPs to automated responses and notifications.
+          - Raised security awareness across Product & Tech through an ongoing culture program (presentations, architecture guidelines, newsletter) embedded in team rituals.
+          - Established KPIs (cycle time, completion rates, developer satisfaction) and used them to drive iterative improvements and leadership reporting.
+
+      - company: AVIV Group
+        position: Security Officer Germany
+        start_date: 2022-02
+        end_date: 2023-01
+        location: Hamburg, Germany
+        summary: Delivered merger integration and AWS security foundations that improved control coverage and audit readiness.
+        highlights:
+          - Ran the security integration stream for the German businesses, aligned controls to CIS and group standards, and facilitated internal audits.
+          - Developed and implemented the security stream for the AWS landingzone covering AWS IAM identity center, a transitgateway hub-and-spoke network architecture, and centralized security logging and monitoring.
+          - Further fortified the AWS security posture via SCPs, Prowler, and AWS Security Hub.
+
+      - company: immowelt GmbH // Axel Springer SE
+        position: Cyber Security Specialist
+        start_date: 2021-10
+        end_date: 2022-06
+        location: Hamburg, Germany
+        summary: Established the company’s first cybersecurity function and embedded security and privacy by design.
+        highlights:
+          - Improved cloud security posture via custom automation and Prowler scanning across 100+ AWS accounts.
+          - Implemented and applied a NIST-based maturity model for the product teams and updated the root cause analysis (RCA) process to align with the product development lifecycle.
+          - Championed security culture with a company-wide Capture-The-Flag (CTF) program.
+
+      - company: immowelt GmbH // Axel Springer SE
+        position: DevOps Engineer
+        start_date: 2015-08
+        end_date: 2021-09
+        location: Hamburg, Germany
+        summary: Pioneered a modern DevOps culture and rebuilt the main product with an AWS-native architecture.
+        highlights:
+          - Modernized the legacy config management monolith by replacing Puppet with modular Ansible and introducing a temporary docker platform based on DC/OS Mesosphere to increase stability and enable loosely coupled microservices.
+          - Championed a DevOps culture and “You build it, you run it” model for an all-in AWS rebuild of the private property search, enabling autonomous delivery.
+          - Engineered GitLab CI/CD with Terraform (later CDKTF), including environment standards and ephemeral stacks to accelerate testing and releases.
+          - Developed multiple products in Java, Python, TypeScript, and frontends (Angular, React) to deliver customer value.
+          - Shipped the AWS-native MVP in 8 months and completed the feature set 9 months later.
+
+      - company: Goodgame Studios
+        position: IT-Support
+        start_date: 2014-02
+        end_date: 2015-07
+        location: Hamburg, Germany
+        summary: Provided IT support in a fast growing gaming company while managing Windows Server infrastructure.
+        highlights:
+          - Provided 2nd and 3rd level IT support for over 800 internal users across two locations.
+          - Managed Windows Server environments, Active Directory, and later Google Suite.
+          - Automated routine tasks using PowerShell and AutoIT scripts to improve efficiency.
+          - Developed and implemented a video streaming solution for company-wide events based on Adobe Flash Media Server.
+
+    Projects:
+      - bullet: "[https://aiwods.live](https://aiwods.live) — serverless GenAI “Workout of the Day” app with personalized WODs, presets, timer, and reactions; built on AWS (Lambda, Bedrock, API Gateway, S3, DynamoDB, CloudFront) with a Next.js frontend."
+      - bullet: "[https://enabledby.cloud](https://enabledby.cloud) — landing page for my approach to platform engineering and DevOps transformations, and leadership; full site coming soon."
+
+    education:
+      - institution: tectumHOME GmbH
+        area: Apprenticeship IT Systems Electronics Technician
+        start_date: 2011-09
+        end_date: 2014-01
+        location: Hamburg, Germany
+        summary: Gained foundational skills in systems, networking, and project delivery across smart home projects.
+        highlights:
+          - Executed smart home projects including hardware installation.
+          - Programmed and designed Crestron control units for conference rooms, offices, and private homes.
+          - Gained hands-on experience with structured cabling, network setups, and server maintenance.
+
+      - institution: State Trade School G18, Hamburg
+        area: Higher Education Entrance Qualification
+        date: 2014-04
+        location: Hamburg, Germany
+        summary:
+        highlights:
+          - Completed Higher Education Entrance Qualification (technical baccalaureate).
+
+    Languages:
+      - bullet: "**German** — native"
+      - bullet: "**English** — fluent"
+      - bullet: "**Spanish** — working proficiency"
+
+    Interests:
+      - bullet: "**Cycling and Muay Thai** - Enjoy outdoor activities and martial arts for fitness and mental clarity."
+      - bullet: "**Coffee** - Passionate about brewing and trained others on different brewing techniques."
+      - bullet: "**Languages** - Enjoy learning languages to explore cultures and connect with people; currently learning Spanish."
+
+design:
+  theme: engineeringclassic
+  templates: 
+      footer: '*NAME -- CURRENT_DATE -- PAGE_NUMBER/TOTAL_PAGES*'
+
+settings:
+  current_date: '2026-01-07'
+  render_command:
+    pdf_path: output/marvyn-stephano-zalewski-cv.pdf
+
+locale:
+  language: english
+  month: month
+  months: months
+  year: year
+  years: years
+  present: present
