@@ -4,9 +4,13 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'cv.yaml'
   pull_request:
     branches:
       - main
+    paths:
+      - 'cv.yaml'
 
 permissions:
   contents: write
@@ -134,7 +138,7 @@ jobs:
           tag_name: latest
           name: "Latest CV"
           body: |
-            Latest version of CV generated on $(date +"%B %d, %Y at %H:%M:%S UTC")
+            Latest version of CV.
             
             **Download:** [${{ steps.find_pdf.outputs.pdf_name }}](https://github.com/${{ github.repository }}/releases/download/latest/${{ steps.find_pdf.outputs.pdf_name }})
             

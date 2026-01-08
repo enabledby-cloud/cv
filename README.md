@@ -6,7 +6,7 @@ This repository contains my CV as code, automatically built and deployed via Git
 
 ## 📄 View CV
 
-The latest version is available at: **[enabledby.cloud](https://enabledby.cloud)**
+The latest version is available at the **[branch cv-pdf](https://github.com/enabledby-cloud/cv/blob/cv-pdf/Marvyn-Stephano_Zalewski_CV.pdf)**.
 
 ## 🛠️ Technology
 
