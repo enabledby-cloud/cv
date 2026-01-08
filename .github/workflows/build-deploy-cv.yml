@@ -56,7 +56,7 @@ jobs:
 
       - name: Generate CV with current date
         run: |
-          CURRENT_DATE=$(date +"%B %d, %Y")
+          CURRENT_DATE=$(date -u +"%Y-%m-%d")
           rendercv render cv.yaml --settings.date "$CURRENT_DATE"
 
       - name: Find generated PDF
