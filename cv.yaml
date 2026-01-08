@@ -158,8 +158,6 @@ design:
 
 settings:
   current_date: '2026-01-07'
-  render_command:
-    pdf_path: output/marvyn-stephano-zalewski-cv.pdf
 
 locale:
   language: english
