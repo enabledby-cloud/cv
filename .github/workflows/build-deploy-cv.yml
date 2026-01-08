@@ -1,0 +1,147 @@
+name: Build, Deploy and Publish CV
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    name: Validate CV YAML
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Validate cv.yaml
+        run: |
+          if [ ! -f cv.yaml ]; then
+            echo "Error: cv.yaml not found"
+            exit 1
+          fi
+          echo "Validating cv.yaml structure..."
+          python -c "import yaml; yaml.safe_load(open('cv.yaml'))"
+          echo "cv.yaml is valid YAML"
+
+  build:
+    name: Build CV
+    runs-on: ubuntu-latest
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install RenderCV
+        run: pip install "rendercv[full]"
+
+      - name: Generate CV with current date
+        run: |
+          CURRENT_DATE=$(date +"%B %d, %Y")
+          rendercv render cv.yaml --settings.date "$CURRENT_DATE"
+
+      - name: Find generated PDF
+        id: find_pdf
+        run: |
+          PDF_PATH=$(find rendercv_output -name "*.pdf" -type f | head -n 1)
+          if [ -z "$PDF_PATH" ]; then
+            echo "Error: No PDF file found"
+            exit 1
+          fi
+          PDF_NAME=$(basename "$PDF_PATH")
+          echo "pdf_path=$PDF_PATH" >> $GITHUB_OUTPUT
+          echo "pdf_name=$PDF_NAME" >> $GITHUB_OUTPUT
+          echo "Found PDF: $PDF_NAME at $PDF_PATH"
+
+      - name: Deploy to cv-pdf branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Create or switch to cv-pdf branch
+          git fetch origin cv-pdf || true
+          if git rev-parse --verify origin/cv-pdf >/dev/null 2>&1; then
+            git checkout cv-pdf
+            git pull origin cv-pdf
+          else
+            git checkout --orphan cv-pdf
+            git rm -rf .
+          fi
+          
+          # Copy the PDF
+          cp "${{ steps.find_pdf.outputs.pdf_path }}" .
+          
+          # Add and commit
+          git add "${{ steps.find_pdf.outputs.pdf_name }}"
+          git commit -m "Update CV - $(date +"%Y-%m-%d %H:%M:%S")" || echo "No changes to commit"
+          
+          # Push to cv-pdf branch
+          git push origin cv-pdf
+
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout cv-pdf branch
+        uses: actions/checkout@v4
+        with:
+          ref: cv-pdf
+
+      - name: Find PDF file
+        id: find_pdf
+        run: |
+          PDF_PATH=$(find . -maxdepth 1 -name "*.pdf" -type f | head -n 1)
+          if [ -z "$PDF_PATH" ]; then
+            echo "Error: No PDF file found in cv-pdf branch"
+            exit 1
+          fi
+          PDF_NAME=$(basename "$PDF_PATH")
+          echo "pdf_path=$PDF_PATH" >> $GITHUB_OUTPUT
+          echo "pdf_name=$PDF_NAME" >> $GITHUB_OUTPUT
+          echo "Found PDF: $PDF_NAME"
+
+      - name: Delete existing 'latest' tag and release
+        run: |
+          gh release delete latest --yes || true
+          git push origin :refs/tags/latest || true
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Create/Update latest release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest
+          name: "Latest CV"
+          body: |
+            Latest version of CV generated on $(date +"%B %d, %Y at %H:%M:%S UTC")
+            
+            **Download:** [${{ steps.find_pdf.outputs.pdf_name }}](https://github.com/${{ github.repository }}/releases/download/latest/${{ steps.find_pdf.outputs.pdf_name }})
+            
+            **View in browser:** [cv-pdf branch](https://github.com/${{ github.repository }}/blob/cv-pdf/${{ steps.find_pdf.outputs.pdf_name }})
+          files: ${{ steps.find_pdf.outputs.pdf_path }}
+          draft: false
+          prerelease: false
+          make_latest: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
