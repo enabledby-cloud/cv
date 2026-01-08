@@ -3,9 +3,9 @@ cv:
   name: Marvyn-Stephano Zalewski
   headline: Engineering Manager - Cloud Platform
   location: Barcelona, Spain
-  email: mzalewski@ownpixel.com
+  email: mszalewski@ownpixel.com
   phone:
-  website: https://hexpy.fyi
+  website: https://enabledby.cloud
   photo: 
   social_networks:
     - network: LinkedIn
@@ -15,13 +15,14 @@ cv:
 
   sections:
     summary:
-      - "**People-centric Engineering Manager** with over **10 years** of experience building and scaling various **Cloud Platforms**. Proven outcome in driving **FinOps** excellence, achieving **$1M+** in annual savings, and modernizing **DevOps** cultures through **Team Topologies**. I bridge the gap between complex infrastructure and business outcomes, focusing on simplification, **observability**, and measurable **Developer Experience (DX)** improvements."
+      - "**People-centric Engineering Manager** with over **10 years** of experience building and scaling various **Cloud Platforms**. Proven outcome in driving **FinOps** excellence, achieving **$1M+** in annual savings, and modernizing **DevOps** cultures through **Team Topologies**. I bridge the gap between complex infrastructure and business outcomes, focusing on **simplification**, **observability**, and measurable **Developer Experience (DX)** improvements."
+      - "*German citizen and eligible to work across the EU.*"
 
     skills:
       - label: Technologies
         details: AWS, Terraform, Docker, GitLab CI/CD, Github Actions, Observability (logs/metrics/traces), FinOps, Datadog, Cloudformation, Ansible
       - label: Security
-        details: SPLC, AWS Security Hub, Guardrails (SCPs), IAM Identity Center, Guardduty, RBAC, Risk Management, NIST, Incident Response, Application Security Assessments
+        details: SPLC, AWS Security Hub, Guardrails (SCPs), IAM Identity Center, Guardduty, RBAC, Risk Management, NIST, Incident Response, Application Security Assessments, highly regulated environments (PCI-DSS, ISO27001)
       - label: Programming
         details: Python, Java, TypeScript, Javascript, Bash
       - label: Frameworks
@@ -38,9 +39,10 @@ cv:
         summary: "*Leading a high-performing, cross-cultural Cloud Platform and DevOps team managing the cloud platform strategy, driving DevOps transformation, and owning FinOps.*"
         highlights:
           - "Defined and executed an outcome-driven roadmap focused on **developer experience**, infrastructure simplification, and security that led to improved **DX**."
-          - "Established and led the **FinOps** function, achieving **$84,835+ monthly savings** within 6 months across **AWS** and **Datadog**."
-          - "Standardized the **observability** platform (logs/metrics/traces), consolidating fragmented approaches into a streamlined system that increased usability and system understanding across **15+ engineering teams**."
+          - "Established and led the **FinOps** function, achieving **$84,000+ monthly savings** within 6 months across **AWS** and **Datadog**."
+          - "Standardized the **observability** platform (logs/metrics/traces) by consolidating fragmented approaches into a streamlined system using OTEL and Vector that simplified the usability across **15+ engineering teams**."
           - "Following the team restructure, improved flow efficiency by reducing context switching and systemizing workstreams, leading to an improved **Peakon** engagement score from **7.2 -> 8.3** and **DX** score from **62 -> 73** within one year."
+          - "Hired and onboarded **3 DevOps engineers** ranging from mid- to Senior 2 level across Spain and Romania to build out the Cloud Platform and DevOps capabilities."
 
       - company: "[Awin Global](https://www.awin.com/)"
         position: Cloud DevOps Manager
@@ -49,7 +51,7 @@ cv:
         location: Barcelona, Spain
         summary: "*Restructured team and operating model to remove bottlenecks and clarify ownership using Team Topologies.*"
         highlights:
-          - "Analyzed bottlenecks, defined a new **department charter**, and executed a re-organization into **DevOps**, **Cloud Platform**, and **IT Ops** in collaboration with Engineering."
+          - "Analyzed bottlenecks, defined a new **department charter**, and executed a re-organization into **DevOps**, **Cloud Platform**, and **IT Ops** in collaboration with the Engineering department."
           - "Managed **3 senior DevOps engineers** across Germany and Italy to conclude the **AWS landing zone** and related infrastructure for further organizational adoption."
           - "Replaced Docker Desktop with open source tools and achieved **$18,000 annual savings**."
 
@@ -82,7 +84,7 @@ cv:
         start_date: 2021-10
         end_date: 2022-06
         location: Hamburg, Germany
-        summary: "*Established the company’s first cybersecurity function and embedded security and privacy by design.*"
+        summary: "*Established the company's first cybersecurity function and embedded security and privacy by design into the SDLC.*"
         highlights:
           - "Improved cloud security posture via custom automation and **Prowler** scanning across **100+ AWS accounts**."
           - "Implemented and applied a **NIST**-based maturity model for the product teams and updated the **RCA** process to align with the product development lifecycle."
@@ -93,9 +95,10 @@ cv:
         start_date: 2015-08
         end_date: 2021-09
         location: Hamburg, Germany
-        summary: "*Pioneered a modern **DevOps** culture and rebuilt the main product with an **AWS-native** architecture.*"
+        summary: "*Pioneered a modern DevOps culture and rebuilt the main product with an **AWS-native** architecture.*"
         highlights:
           - "Modernized the legacy config management monolith by replacing **Puppet** with modular **Ansible** and introducing a temporary **Docker** platform based on **DC/OS Mesosphere** to increase stability and enable loosely coupled microservices."
+          - Managed, updated, and automated 3 Datacenters with over 50 Linux and Windows based physical servers based on KVM, Opennebula, and Hyper-V.
           - "Championed a **DevOps** culture and “You build it, you run it” model for an all-in **AWS** rebuild of the private property search, enabling autonomous delivery."
           - "Engineered **GitLab CI/CD** with **Terraform** (later **CDKTF**), including environment standards and **ephemeral stacks** to accelerate testing and releases."
           - "Developed multiple products in **Java**, **Python**, **TypeScript**, and frontends (**Angular**, **React**) to deliver customer value."
@@ -117,25 +120,17 @@ cv:
       - bullet: "[https://aiwods.live](https://aiwods.live) — **serverless GenAI** “Workout of the Day” app with personalized WODs, presets, timer, and reactions; built on **AWS** (Lambda, Bedrock, API Gateway, S3, DynamoDB, CloudFront) with a **Next.js** frontend."
       - bullet: "[https://enabledby.cloud](https://enabledby.cloud) — landing page for my approach to platform engineering, DevOps transformations, and leadership; full site coming soon."
 
-    education:
+    Education:
       - institution: tectumHOME GmbH
         area: Apprenticeship IT Systems Electronics Technician
         start_date: 2011-09
         end_date: 2014-01
         location: Hamburg, Germany
-        summary: "*Gained foundational skills in systems, networking, and project delivery across smart home projects.*"
-        highlights:
-          - Executed smart home projects including hardware installation.
-          - Programmed and designed Crestron control units for conference rooms, offices, and private homes.
-          - Gained hands-on experience with structured cabling, network setups, and server maintenance.
 
       - institution: State Trade School G18, Hamburg
         area: Higher Education Entrance Qualification
         date: 2014-04
         location: Hamburg, Germany
-        summary:
-        highlights:
-          - Completed Higher Education Entrance Qualification (technical baccalaureate).
 
     Languages:
       - bullet: "**German** — native"
