@@ -15,12 +15,12 @@ cv:
 
   sections:
     summary:
-      - "**People-centric Engineering Manager** with over **10 years** of experience building and scaling various **Cloud Platforms**. Proven outcome in driving **FinOps** excellence, achieving **$1M+** in annual savings, and modernizing **DevOps** cultures through **Team Topologies**. I bridge the gap between complex infrastructure and business outcomes, focusing on **simplification**, **observability**, and measurable **Developer Experience (DX)** improvements."
+      - "**People-centric Engineering Manager** with over **10 years** of experience building and scaling various **Cloud Platforms**. Proven outcome in leading **datacentre-to-AWS migrations**, driving **FinOps** excellence with **$1M+** in annual savings, and modernizing **DevOps** cultures through **Team Topologies** and **operating model design**. I bridge the gap between complex infrastructure and business outcomes, focusing on **simplification**, **observability**, and measurable **Developer Experience (DX)** improvements."
       - "*German citizen and eligible to work across the EU.*"
 
     skills:
       - label: Technologies
-        details: AWS, Terraform, Docker, GitLab CI/CD, Github Actions, Observability (logs/metrics/traces), FinOps, Datadog, Cloudformation, Ansible
+        details: AWS, AWS MAP, AWS Backup, Terraform, Docker, GitLab CI/CD, GitHub Actions, GitHub Enterprise, Jira Service Management, Observability (logs/metrics/traces), FinOps, Datadog, Cloudformation, Ansible
       - label: Security
         details: SPLC, AWS Security Hub, Guardrails (SCPs), IAM Identity Center, Guardduty, RBAC, Risk Management, NIST, Incident Response, Application Security Assessments, highly regulated environments (PCI-DSS, ISO27001)
       - label: Programming
@@ -28,7 +28,7 @@ cv:
       - label: Frameworks
         details: Angular, React, NestJS, Next.js
       - label: Leadership
-        details: Team Topologies, OKRs, Scrumban, Coaching/Mentoring, Change Management, Cross-cultural and remote Teams, Stakeholder Management, Communication, System Thinking, Storytelling, agility
+        details: Team Topologies, You Build It You Run It, SRE, ADRs, Psychological Safety, OKRs, Scrumban, Coaching/Mentoring, Change Management, Cross-cultural and remote Teams, Stakeholder Management, Communication, System Thinking, Storytelling, agility
 
     experience:
       - company: "[Awin Global](https://www.awin.com/)"
@@ -36,13 +36,14 @@ cv:
         start_date: 2024-08
         end_date: present
         location: Barcelona, Spain
-        summary: "*Leading a high-performing, cross-cultural Cloud Platform and DevOps team managing the cloud platform strategy, driving DevOps transformation, and owning FinOps.*"
+        summary: "*Leading cross-cultural Cloud Platform and DevOps teams: owning the cloud platform strategy, the datacentre-to-AWS migration, the DevOps transformation, and FinOps.*"
         highlights:
-          - "Defined and executed an outcome-driven roadmap focused on **developer experience**, infrastructure simplification, and security that led to improved **DX**."
-          - "Established and led the **FinOps** function, achieving **$84,000+ monthly savings** within 6 months across **AWS** and **Datadog**."
-          - "Standardized the **observability** platform (logs/metrics/traces) by consolidating fragmented approaches into a streamlined system using OTEL and Vector that simplified the usability across **15+ engineering teams**."
-          - "Following the team restructure, improved flow efficiency by reducing context switching and systemizing workstreams, leading to an improved **Peakon** engagement score from **7.2 -> 8.3** and **DX** score from **62 -> 73** within one year."
-          - "Hired and onboarded **3 DevOps engineers** ranging from mid- to Senior 2 level across Spain and Romania to build out the Cloud Platform and DevOps capabilities."
+          - "Leading the **datacentre-to-AWS migration (Project Evolve)**: ran vendor selection and contracting, secured **100% AWS MAP funding** for phase one (**$150k+** saved), and drove the migration of **1,400+ VMs** towards datacentre exit in 2027."
+          - "Hired and onboarded **8 engineers** since September 2025 across multiple European countries and seniority levels (junior to senior), rebuilding the Cloud Platform and DevOps teams after a re-org."
+          - "Made **GitHub Actions** the company-wide CI/CD standard (~50 contributors), with golden pipelines that cut new-service setup by **~16 hours**, **OIDC** short-lived credentials, and governance across **900+ repos**."
+          - "Wrote and rolled out a **You Build It, You Run It** operating model and **SRE strategy**, re-implemented **incident management** and closed internal audit actions; the Enablement DevOps pilot is now scaling to all domains, and AWS rated the model as mature."
+          - "Established and led **FinOps**: **$84k+ monthly savings** across **AWS** and **Datadog** on **$3.5M+/year** spend, and cut budget-vs-actual variance from **20% to 3%** through domain-level forecasting."
+          - "In the company-wide **DX survey**, raised the **DevOps engagement score** (all engineering teams rating DevOps/CPE) from **68 -> 82** and my team's rating of me as manager and of P&T from **62 -> 73**; Focus Time, Supporter of the Week and a psychological-safety assessment also lifted **Peakon** engagement from **7.2 -> 8.3**."
 
       - company: "[Awin Global](https://www.awin.com/)"
         position: Cloud DevOps Manager
@@ -54,6 +55,7 @@ cv:
           - "Analyzed bottlenecks, defined a new **department charter**, and executed a re-organization into **DevOps**, **Cloud Platform**, and **IT Ops** in collaboration with the Engineering department."
           - "Managed **3 senior DevOps engineers** across Germany and Italy to conclude the **AWS landing zone** and related infrastructure for further organizational adoption."
           - "Replaced Docker Desktop with open source tools and achieved **$18,000 annual savings**."
+          - "Hired two managers to lead the newly formed sister teams."
 
       - company: "[AVIV Group](https://www.aviv-group.com/)"
         position: Security Architect
@@ -102,7 +104,7 @@ cv:
           - "Championed a **DevOps** culture and “You build it, you run it” model for an all-in **AWS** rebuild of the private property search, enabling autonomous delivery."
           - "Engineered **GitLab CI/CD** with **Terraform** (later **CDKTF**), including environment standards and **ephemeral stacks** to accelerate testing and releases."
           - "Developed multiple products in **Java**, **Python**, **TypeScript**, and frontends (**Angular**, **React**) to deliver customer value."
-          - "Shipped the **AWS-native MVP** in **8 months** and completed the feature set **9 months** later."
+          - "Shipped the **AWS-native MVP** of the **Search Engine Result Page (SERP)**, immowelt's main product for property search, in **8 months** and completed the full feature set **9 months** later."
 
       - company: "[Goodgame Studios](https://www.goodgamestudios.com/)"
         position: IT-Support
@@ -112,13 +114,10 @@ cv:
         summary: "*Provided IT support in a fast-growing gaming company while managing **Windows Server** infrastructure.*"
         highlights:
           - "Provided 2nd and 3rd level IT support for **800+ internal users** across two locations."
-          - "Managed **Windows Server** environments, **Active Directory**, and later **Google Workspace**."
           - "Automated routine tasks using **PowerShell** and **AutoIT** scripts to improve efficiency."
-          - "Developed and implemented a video streaming solution for company-wide events based on **Adobe Flash Media Server**."
 
     Projects:
-      - bullet: "[https://aiwods.live](https://aiwods.live) — **serverless GenAI** “Workout of the Day” app with personalized WODs, presets, timer, and reactions; built on **AWS** (Lambda, Bedrock, API Gateway, S3, DynamoDB, CloudFront) with a **Next.js** frontend."
-      - bullet: "[https://enabledby.cloud](https://enabledby.cloud) — landing page for my approach to platform engineering, DevOps transformations, and leadership; full site coming soon."
+      - bullet: "[https://play40.app](https://play40.app) — **Play40**, an online version of Ecuador's national card game, built solo on serverless **AWS** (AppSync, Lambda, DynamoDB, Terraform) with a **Next.js** frontend."
 
     Education:
       - institution: tectumHOME GmbH
@@ -133,14 +132,10 @@ cv:
         location: Hamburg, Germany
 
     Languages:
-      - bullet: "**German** — native"
-      - bullet: "**English** — fluent"
-      - bullet: "**Spanish** — working proficiency"
+      - bullet: "**German** (native) · **English** (fluent) · **Spanish** (working proficiency)"
 
     Interests:
-      - bullet: "**Cycling and Muay Thai** - Enjoy outdoor activities and martial arts for fitness and mental clarity."
-      - bullet: "**Coffee** - Passionate about brewing and trained others on different brewing techniques."
-      - bullet: "**Languages** - Enjoy learning languages to explore cultures and connect with people; currently learning Spanish."
+      - bullet: "**Cycling**, **Muay Thai**, **specialty coffee** (trained others in brewing), and **learning languages**."
 
 design:
   theme: engineeringclassic
@@ -157,7 +152,7 @@ design:
     top_note: rgb(128, 128, 128)
 
 settings:
-  current_date: '2026-01-07'
+  current_date: '2026-10-09'
 
 locale:
   language: english
